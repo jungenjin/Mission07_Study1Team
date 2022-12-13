@@ -34,15 +34,15 @@
                
                return false;
             });
-      });
 
-      $(document).ready(function(){
-         $('#m_QA  ul li ul p a,m3').click(function () {
-               $(this).next().addBack().toggleClass('on').end().find('.m3').removeClass('on').end().parent().siblings().find('.m3').removeClass('on');
+            $('#m_QA  ul li ul p a.m3').click(function(){
+               $(this).next().addBack().toggleClass('on').end().find('.A').removeClass('on').end().parent().siblings().find('.A').removeClass('on');
                
                return false;
             });
       });
+
+    
     </script>
 </head>
 <body>
