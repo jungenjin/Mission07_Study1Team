@@ -169,3 +169,35 @@ footer {
     margin: 27px 0 0 30px;
  }
  
+ /* media */
+ @media screen and (max-width: 962px) {
+	.QA_box {
+      width: 962px;
+		text-align: center;
+	}
+   .m_QA {
+      
+      width: 962px;
+		text-align: center;
+   }
+   #m_QA a.m1  {
+      width: 962px;
+		text-align: center;
+   }
+}
+
+@media screen and (max-width: 500px) {
+	.QA_box {
+      width: 500px;
+		text-align: center;
+      
+	}
+   .m_QA {
+      width: 500px;
+		text-align: center;
+   }
+   #m_QA a.m1  {
+      width: 500px;
+		text-align: center;
+   }
+}
