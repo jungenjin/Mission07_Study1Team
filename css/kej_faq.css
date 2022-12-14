@@ -52,9 +52,9 @@
 .faq {background:#f9f9f9;padding:30px 0 80px 0}
 
 .faq_search {position:relative;margin-bottom:25px}
-.faq_search input {width:100%;height:57px; padding:0 50px 0 20px;}
-.faq_search button {position:absolute; right:0; top:0; width:50px; height:100%; background:none; border:none; box-shadow:none;cursor:pointer;transition:none}
-
+.faq_search input {width:100%;height:57px;border:1px solid #dbdbdb;padding:0 50px 0 20px;}
+.faq_search button {position:absolute; right:0; top:0; width:57px; height:100%; background:none; border:none; box-shadow:none;cursor:pointer;transition:none}
+.faq_search button i {color:#878787}
 .faq_tab {display:grid;grid-template-columns:33.3% 33.3% 33.3%;background:#fff;box-shadow:0px 1px 3px 0px rgb(0 0 0 / 6%);}
 .faq_tab, .faq_tab li {list-style:none;padding-left:0}
 .faq_tab li {text-align:center;border-top:1px solid #efefef;border-left:1px solid #efefef;padding:20px 0;transition: 0.3s;cursor:pointer;}
@@ -97,6 +97,7 @@
 
 	.faq {padding:30px 0 100px 0}
 	.faq_list li .question {display:flex;justify-content:flex-start;align-items:center;font-size:20px;padding:30px 80px 30px 50px;}
+	.faq_list li .question span, .faq_list li .answer .text_wrap span {display:inline-block;}
 	.faq_list li .question span {width:7%;flex-shrink:0;font:700 22px 'Cairo'}
 	.faq_list li .question::after {right:45px;top:37px;}
 	.faq_list li .answer {padding:0 50px;}
