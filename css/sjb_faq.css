@@ -1,0 +1,75 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'KyoboHandwriting2020A';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2112@1.0/KyoboHandwriting2020A.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size: 12px;
+    font-family: 'KyoboHandwriting2020A';
+}
+
+.main_wrap{
+  background-image: url(../resources/images/son/backgorund_macarong.jpg);
+  background-position: center;
+  margin: 0;
+
+}
+
+.faq_wrap{
+  width: 60%;
+  text-align: center;
+  background-color: white;
+  margin: 2% 20% 2% 20%;
+}
+
+.code{
+  font-family: 'KyoboHandwriting2020A';
+}
+
+
+
+/* 푸터 시작 */
+
+footer{
+    width: 100%;
+   height: auto; 
+    float: left;
+    background: #EAEAEA;
+    color: black;
+    text-align: center;
+  }
+  
+  .down_logo{
+    padding-top: 5%;
+    width: 35%;
+    height: 100%;
+    float: left;
+  
+  }
+  
+  .copyright{
+    padding-top: 5%;
+    width: 35%;
+    height: 80%;
+    float: left;
+    border-left: 2px solid darkgray;
+    border-right: 2px solid darkgray;
+  
+  
+  }
+
+  .sns{
+    margin-top: 5%;
+    width: 30%;
+    height: 100%;
+    float: right;
+  
+  }
+
+  /* 푸터 끝 */

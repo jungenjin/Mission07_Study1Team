@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>과자먹자 자주 묻는 질문</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/sjb_faq.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+</head> 
+<body>
+  <!-- 부트스트랩을 이용한 네비 바 -->
+  <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><i class="fas fa-cookie-bite"></i><span class="logoName">과자먹자</span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">메인 홈</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">과자모음</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">선물하기</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">특가이벤트</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">구독하기</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">로그인</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">로그아웃</a>
+              </li><li class="nav-item">
+                <a class="nav-link" href="#">자주 묻는 질문</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="검색어를 입력해주세요." aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">찾기</button>
+            </form>
+          </div>
+        </div>
+  </nav>
+  <div class="main_wrap">
+    <span>자주 묻는 질문</span>
+    <div class="faq_wrap">
+    <div class="accordion" id="accordionPanelsStayOpenExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+            <strong>Q.</strong> 알 수 없는 번호로 해당 사이트에 대한 문자를 받았어요.
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+          <div class="accordion-body">
+            <strong>A.</strong> 해당 번호가 '과자먹자'의 대표번호가 맞는지 확인해주세요.<code>(1588-4152)</code>
+            <br>만약 확인이 어렵다면 고객 상담 센터를 통해 전화 주시면 확인 해드리겠습니다.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+            <strong>Q.</strong> 상품 후기는 언제부터 작성 가능한가요?
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+          <div class="accordion-body">
+            <strong>A.</strong>상품 후기는 마이페이지 내 배송완료로 변경 후 <strong>7일 이내</strong>작성 가능합니다.<br>
+            배송완료는 운송장 조회가<code> '배송완료'</code>로 변경될 때 자동으로 변경됩니다.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+            <strong>Q.</strong> 배송중에 배송지 및 배송 요청 사항을 변경 할 수 있나요?
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+          <div class="accordion-body">
+            <strong>A.</strong>상품이 이미 출발하여 배송중인 상태에서는 배송지 및 배송요청사항/메모 변경이 가능하지 않습니다.<br>
+            다만, 현재 배송 상태가 <code>배송준비중 이라면 배송지 수정하기</code>를 클릭하여 배송지를 변경하실 수 있습니다.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+            <strong>Q.</strong> 상품을 직접 방문하여 수령 할 수 있나요?
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
+          <div class="accordion-body">
+            <strong>A.</strong>택배로 배송해 드리는 것을 원칙으로 하고 있어 <code>직접 방문 및 수령은 가능하지 않습니다.</code>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="panelsStayOpen-headingFive">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
+            <strong>Q.</strong> 상품 후기는 언제부터 작성 가능한가요?
+          </button>
+        </h2>
+        <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFive">
+          <div class="accordion-body">
+            <strong>A.</strong>상품이 이미 출발하여 배송중인 상태에서는 배송지 및 배송요청사항/메모 변경이 가능하지 않습니다.<br>
+            다만, 현재 배송 상태가 <code>배송준비중 이라면 배송지 수정하기</code>를 클릭하여 배송지를 변경하실 수 있습니다.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ <div class= "review_Wrap">
+ <a href="sjb_faq2.html" target="_blank"><button type="button">링크로 이동</button></a> 
+
+ <script src=""></script>
+
+  </div>
+
+  </div>
+</div>
+ 
+  <!-- 푸터 -->
+  <footer>
+    <div class="down_logo col-md-4">
+      <span>
+        상호 : (주)과자먹자<br>
+        대표 : 이과자<br>
+       주소 : 서울특별시 용산구 한강대로 52-5 3층<br>
+       사업자 등록 번호 521-4567-99876<br>
+       제휴 문의 snackeat@snackeat.co.kr<br>       
+     </span>
+    </div>
+    <div class="copyright col-md-4">
+      <span>
+        <h2>고객 상담 센터</h2><br>
+        <h3>1588-4152</h3><br>
+        상담시간 : 오전 10:00 ~ 오후 5:00<br>
+        점심시간 : 오후 12:00 ~ 오후 1:00<br>         
+      </span>
+      <br>
+      <span>Copyright &copy; 과자먹자 . All rights reserved.</span><br>
+    </div>
+    <div class="sns col-md-4">
+      <div id="kind">
+        <img class="instar" width="30px" src="../resources/images/son/instagram_icon.png" alt="인스타">
+        <img class="youtube" width="30px" src="../resources/images/son/youtubelogoicon.svg" alt="유투브">
+        <img class="twitter" width="30px" src="../resources/images/son/twitter logo_icon.png" alt="트위터">
+      </div>
+    </div>
+  </footer>    
+</body>
+</html>
