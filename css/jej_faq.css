@@ -1,0 +1,171 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/* 초기화 */
+* {
+   margin: 0;
+   padding: 0;
+}
+a {
+   text-decoration: none;
+   color: #161a1d !important;
+}
+ul,
+li,
+ol {
+   list-style: none;
+}
+/* common */
+.container {
+   margin: 0 auto;
+   max-width: 1200px;
+   overflow: hidden;
+   font-family: 'Noto Sans KR', sans-serif;
+}
+/* header */
+.navbar-brand img {
+    width: 66px;
+ }
+ .container-fluid{
+    width: 1200PX !important;
+    background-color: #fff !important;
+ }
+ .fas {
+    margin-left: 20px;
+ }
+ /* nav hover */
+ nav ul li a:hover {
+    color: #ff7b00 !important;
+ }
+/* section */
+.title {
+   text-align: center;
+   font-size: 38px;
+   font-weight: bold;
+   margin: 100px 0 100px 0;
+   color: #161a1d;
+}
+span {
+   font-weight: bold;
+   padding: 0 10px 0 0;
+}
+.m2 {
+   font-weight: 500;
+}
+.A {
+   padding: 0 10px 0 24px;
+}
+.Q {
+   color: #161a1d;
+}
+.QA_box {
+   width: 1200px;
+   height: 696px;
+}
+li {
+   list-style: none;
+}
+a {
+   color: #161a1d;
+   text-decoration: none;
+}
+#m_QA {
+   position: absolute;
+   width: 1200px;
+   height: 320px;
+}
+#m_QA a {
+   display: block;
+   padding: 20px;
+}
+#m_QA a.m1 {
+   border-bottom: 1px solid #3a3a3a;
+}
+#m_QA .m1 {
+   font-weight: bold;
+}
+
+#m_QA .m1.on {
+   color: #ff7b00;
+}
+
+#m_QA > li> ul > a.m3 {
+   display: none;
+   display: block;
+   padding: 20px;
+}
+#m_QA ul a.m3 {
+   background: #fce9cd;
+}
+#m_QA ul a {
+   text-indent: 20px;
+}
+#m_QA li ul {
+   display: none;
+
+}
+#m_QA li ul.on {
+   display: block;
+}
+
+/* footer */
+footer {
+    clear: both;
+    width: 100%;
+    min-height: 246px;
+    background-color: #495057;
+    clear: both;
+    margin: 100px 0 0 0;
+ }
+ .text7 {
+    font-size: 20px;
+    font-weight: 100;
+    color: #f8f9fa;
+ }
+ .part_4box1 {
+    float: left;
+    width: 277px;
+    height: 155px;
+    margin: 27px 0 0 0;
+ }
+ .text8 {
+    font-size: 36px;
+    font-weight: 800;
+    color: #161a1d;
+ }
+ .text9 {
+    font-size: 12px;
+    font-weight: 300;
+    color: #adb5bd;
+ }
+ .part_4box2 {
+    float: left;
+    width: 585px;
+    height: 155px;
+    margin: 27px 0 0 30px;
+ }
+ .boximg5 {
+    float: left;
+    width: 175px;
+    height: 114px;
+    background-image: url(../resources/images/jej/bakery3.jpg);
+    background-position: center;
+    margin: 9px 0 0 0;
+ }
+ .text_box3 {
+    float: left;
+    width: 380px;
+    height: 114px;
+    margin: 9px 0 0 30px;
+ }
+ .text10 {
+    font-size: 14px;
+    font-weight: bold;
+    color: #dee2e6;
+ }
+ .part_4box3 {
+    float: left;
+    width: 250px;
+    height: 155px;
+    margin: 27px 0 0 30px;
+ }
+ 
