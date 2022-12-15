@@ -55,11 +55,12 @@
 .faq_search input {width:100%;height:57px;border:1px solid #dbdbdb;padding:0 50px 0 20px;}
 .faq_search button {position:absolute; right:0; top:0; width:57px; height:100%; background:none; border:none; box-shadow:none;cursor:pointer;transition:none}
 .faq_search button i {color:#878787}
+/* faq 탭메뉴 */
 .faq_tab {display:grid;grid-template-columns:33.3% 33.3% 33.3%;background:#fff;box-shadow:0px 1px 3px 0px rgb(0 0 0 / 6%);}
 .faq_tab, .faq_tab li {list-style:none;padding-left:0}
 .faq_tab li {text-align:center;border-top:1px solid #efefef;border-left:1px solid #efefef;padding:20px 0;transition: 0.3s;cursor:pointer;}
 .faq_tab li.on {border-top:1px solid #FFDA57;border-left:1px solid #FFDA57;background:#FFDA57;color:#fff}
-
+/* faq 목록 */
 .faq_list, .faq_list li {list-style:none;padding-left:0}
 .faq_list li {position:relative;background:#fff;box-shadow:0px 1px 3px 0px rgb(0 0 0 / 6%);margin-top:30px;}
 .faq_list li .question {font-weight:500;padding:27px 67px 27px 35px;cursor:pointer;}

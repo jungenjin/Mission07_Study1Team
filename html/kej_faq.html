@@ -15,18 +15,25 @@
     <script>
         window.onload = function(){
             //tab - jQuery로 구현
+            //탭영역의 li를 클릭할 때 on클래스 제어
             $(".faq_tab > li").click(function(){
                 if($(this).hasClass("on") == false){
+                    //선택한 요소에 on 추가
                     $(this).stop().addClass("on");
+                    //그 외의 형제 요소에 on 제거
                     $(this).stop().siblings().removeClass("on");
                 } 
             })
 
             // //list - javascript로 구현
+            //질문영역 question 변수에 담기
             var question = document.getElementsByClassName('question');
+            // console.log(question);
             for(var i = 0; i < question.length; i++){
                 question[i].addEventListener('click', function(e){
+                    //답변영역 answer 변수에 담기
                     var answer = e.currentTarget.parentElement.getElementsByClassName('answer')[0];
+                    //answer영역의 visibillity 속성값으로 active클래스 제어
                     if(answer.style.visibility !== 'visible'){
                         answer.style.visibility = 'visible'
                         e.currentTarget.parentElement.classList.add('active');
