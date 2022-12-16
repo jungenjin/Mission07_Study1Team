@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>과자먹자 자주 묻는 질문</title>
+    <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="../js/sjb_faq.js"></script>
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/sjb_faq.css">
@@ -20,54 +22,65 @@
 <body>
   <!-- 부트스트랩을 이용한 네비 바 -->
   <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"><i class="fas fa-cookie-bite"></i><span class="logoName">과자먹자</span></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">메인 홈</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">과자모음</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">선물하기</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">특가이벤트</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">구독하기</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">로그인</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">로그아웃</a>
-              </li><li class="nav-item">
-                <a class="nav-link" href="#">자주 묻는 질문</a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="검색어를 입력해주세요." aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">찾기</button>
-            </form>
-          </div>
-        </div>
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><i class="fas fa-cookie-bite"></i><span class="logoName">과자먹자</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">메인 홈</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">과자모음</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">선물하기</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">특가이벤트</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">구독하기</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">로그인</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">로그아웃</a>
+          </li><li class="nav-item">
+            <a class="nav-link" href="#">자주 묻는 질문</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="검색어를 입력해주세요." aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">찾기</button>
+        </form>
+      </div>
+    </div>
   </nav>
-  <div class="main_wrap">
-    <span>자주 묻는 질문</span>
+  <div class="main_wrap ">
+    <div class="container">
+      <div class="row">
+        <div class="col-12" id="faq_header">
+          <span>자주 묻는 질문</span>
+        </div>
+        <div class="col-10">
+        </div>
+        <div class="col-2">
+          <button id ="alertStart" class=" btn btn-info">불편사항 접수하기</button>
+        </div>
+      </div>
+    </div>
     <div class="faq_wrap">
-    <div class="accordion" id="accordionPanelsStayOpenExample">
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-            <strong>Q.</strong> 알 수 없는 번호로 해당 사이트에 대한 문자를 받았어요.
-          </button>
-        </h2>
+      <div class="accordion" id="accordionPanelsStayOpenExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+              <strong>Q.</strong> 알 수 없는 번호로 해당 사이트에 대한 문자를 받았어요.
+            </button>
+          </h2>
         <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
           <div class="accordion-body">
             <strong>A.</strong> 해당 번호가 '과자먹자'의 대표번호가 맞는지 확인해주세요.<code>(1588-4152)</code>
@@ -126,17 +139,9 @@
           </div>
         </div>
       </div>
+  </div>
     </div>
   </div>
- <div class= "review_Wrap">
- <a href="sjb_faq2.html" target="_blank"><button type="button">링크로 이동</button></a> 
-
- <script src=""></script>
-
-  </div>
-
-  </div>
-</div>
  
   <!-- 푸터 -->
   <footer>
